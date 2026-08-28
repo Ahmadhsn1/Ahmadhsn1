@@ -4,8 +4,9 @@
   secure API design, Postgres Row Level Security, LLM cost & reliability engineering.
   MERN · Next.js · Python / Flask · Kotlin · Java · React Native.
   Co-lead developer (one of two) on EasyQuran — a Quran study app built with a Saudi team,
-  live on the App Store and Google Play. Aria — an AI booking assistant at Prime Coworking:
-  LLM tool-calling over a production scheduling platform, OTP-gated mutations, audit trail.
+  live on the App Store and Google Play. Aria — an AI booking assistant at Prime Coworking,
+  built on top of the company's e-Booking system (a SaaS booking &amp; scheduling product):
+  LLM tool-calling over the live domain services, OTP-gated mutations, audit trail.
   Lahore, Pakistan. Panels are generated SVGs in /assets/x.
 -->
 
@@ -40,7 +41,7 @@
 
 I build **applied AI systems** that survive contact with real users. Most LLM work stops at *"it calls the model and it runs on my machine."* Mine is designed for the parts that break in production — per-user token budgets so one account can't run up the bill, graceful degradation when the model returns garbage or times out, signed short-lived asset URLs, and a test suite built around the invariants the security model actually rests on.
 
-I own products **end to end**: data model, API, auth, the web client, the Android app, CI and the deploy — no handoffs for something to fall through. Most recently as **co-lead developer on [EasyQuran](https://easyquran.app)**, a Quran study app built with a Saudi team and shipped to the App Store and Google Play, now used by 10,000+ families at 4.9★. At **Prime Coworking** I built **Aria**, a conversational booking assistant layered over the company's scheduling platform — 15 tools over the existing domain services, an emailed OTP on every booking change, and an audit-log entry for each write.
+I own products **end to end**: data model, API, auth, the web client, the Android app, CI and the deploy — no handoffs for something to fall through. Most recently as **co-lead developer on [EasyQuran](https://easyquran.app)**, a Quran study app built with a Saudi team and shipped to the App Store and Google Play, now used by 10,000+ families at 4.9★. At **Prime Coworking** I built **Aria**, a conversational booking assistant layered over the company's **e-Booking system** — its SaaS booking &amp; scheduling product — with 15 tools over the existing domain services, an emailed OTP on every booking change, and an audit-log entry for each write.
 
 <table>
 <tr><td>⚡&nbsp;<b>Edge</b></td><td>Taking working prototypes to production — revocation-aware sessions, tenant isolation enforced in the database, cost controls on metered AI, and deploys that actually happen</td></tr>
@@ -57,15 +58,15 @@ I own products **end to end**: data model, API, auth, the web client, the Androi
 
 ## 🗂️ Selected Work
 
-Nine projects — an AI booking layer for a commercial scheduling platform at Prime Coworking, one app live on the App Store &amp; Google Play, and the rest open-source with every number pulled straight from the repo.
+Nine projects — an AI assistant layer for Prime Coworking's e-Booking SaaS product, one app live on the App Store &amp; Google Play, and the rest open-source with every number pulled straight from the repo.
 
 <table>
 <tr><th align="left">Project</th><th align="left">What it is</th><th align="left">Signals</th></tr>
 
 <tr>
 <td><b>Aria</b><br/><sub>AI Booking Assistant · at Prime Coworking</sub></td>
-<td>A conversational booking layer built at <b>Prime Coworking</b>, sitting on top of the company's existing scheduling platform. Customers chat in any language — <i>&ldquo;need an appointment tomorrow after 5&rdquo;</i> — and Aria resolves the service and staff, offers <b>real</b> open slots, and books, reschedules or cancels. The rule that holds it together: Aria owns <b>no</b> availability or booking logic — the booking engine stays the single source of truth and Aria is a pure orchestration layer, so the assistant and the traditional booking widget can never drift apart.</td>
-<td><code>NestJS · TypeScript</code> <code>15 tool-calling functions</code> <code>MongoDB conversation memory</code> <code>Gemini 2.5 Flash</code> <code>OTP-gated + audit-logged mutations</code> <code>provider-neutral LLM layer</code><br/><sub>One public endpoint, throttled per IP · every tool wraps a domain service the production widget already calls — zero duplicated booking logic · 40-message bounded history with orphan-turn protection · 4-attempt retry with backoff · React 19 iframe chat widget — focus-trap a11y, abort-on-unmount, server-owned state</sub></td>
+<td>A conversational booking layer built at <b>Prime Coworking</b> on top of the company's <b>e-Booking system</b> — its multi-tenant SaaS booking &amp; scheduling product. Customers chat in any language — <i>&ldquo;need an appointment tomorrow after 5&rdquo;</i> — and Aria resolves the service and staff, offers <b>real</b> open slots, and books, reschedules or cancels. The rule that holds it together: Aria owns <b>no</b> availability or booking logic — the booking engine stays the single source of truth and Aria is a pure orchestration layer, so the assistant and the product's own booking widget can never drift apart.</td>
+<td><code>NestJS · TypeScript</code> <code>15 tool-calling functions</code> <code>MongoDB conversation memory</code> <code>Gemini 2.5 Flash</code> <code>OTP-gated + audit-logged mutations</code> <code>provider-neutral LLM layer</code><br/><sub>One public endpoint, throttled per IP · every tool wraps a domain service the e-Booking product's own widget already calls — zero duplicated booking logic · 40-message bounded history with orphan-turn protection · 4-attempt retry with backoff · React 19 iframe chat widget — focus-trap a11y, abort-on-unmount, server-owned state</sub></td>
 </tr>
 
 <tr>
@@ -133,7 +134,7 @@ A few decisions from the work above that I'd defend in a review:
 - **Offline is a feature, not a fallback.** MindScribe hands uploads to WorkManager so they finish after a reboot; EasyQuran works fully offline after the first download.
 - **Revocation is instant.** NoteMind re-verifies the session against the database on every request — a revoked user is locked out now, not in fifteen minutes.
 - **A public endpoint still needs teeth.** Aria's booking API is unauthenticated by design, so every booking change is gated behind an emailed OTP (with a name-and-phone-match fallback), rate-limited per IP, locked after repeated bad attempts and written to an audit log — and the prompt's integrity block means a customer can't talk their way past any of it.
-- **The model orchestrates; it never owns the truth.** Each of Aria's 15 tools wraps the exact domain service the production booking widget already calls, so there is no second copy of the availability logic for the AI to disagree with.
+- **The model orchestrates; it never owns the truth.** Each of Aria's 15 tools wraps the exact domain service the e-Booking product's own booking widget already calls, so there is no second copy of the availability logic for the AI to disagree with.
 
 <br/>
 
