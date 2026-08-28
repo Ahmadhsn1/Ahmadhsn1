@@ -10,7 +10,7 @@ import os, html
 def e(s):
     return html.escape(str(s), quote=True)
 
-OUT = os.path.join(os.path.dirname(__file__), "Ahmadhsn1", "assets", "w")
+OUT = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(OUT, exist_ok=True)
 W = 1200
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
@@ -117,8 +117,8 @@ def divider():
 
 def langmix():
     h = 148
-    segs = [("TypeScript", 31, "#3178C6"), ("JavaScript", 23, "#C9B037"), ("Kotlin", 15, "#7F52FF"),
-            ("Java", 15, "#E76F00"), ("Python", 12, "#4B8BBE"), ("SQL / PLpgSQL", 4, "#3ECF8E")]
+    segs = [("TypeScript", 34, "#3178C6"), ("JavaScript", 22, "#C9B037"), ("Kotlin", 14, "#7F52FF"),
+            ("Java", 14, "#E76F00"), ("Python", 12, "#4B8BBE"), ("SQL / PLpgSQL", 4, "#3ECF8E")]
     g = [f'<text x="40" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="{INK}">LANGUAGE MIX</text>',
          f'<text x="{W-40}" y="34" text-anchor="end" font-size="11.5" fill="{LO}">approximate share of code across every repository</text>']
     x, total = 40, W - 80
@@ -131,7 +131,7 @@ def langmix():
         g.append(f'<circle cx="{lx+4}" cy="90" r="3.5" fill="{col}"/><text x="{lx+14}" y="94" font-size="12.5" fill="{MID}">{nm} {pct}%</text>')
         lx += len(nm) * 7.3 + 58
     g.append(f'<rect x="40" y="112" width="{W-80}" height="1" fill="#1C2842"/>')
-    g.append(f'<text x="40" y="134" font-size="12.5" fill="{LO}">8 shipped products    ·    live on the App Store &amp; Google Play    ·    10,000+ app users    ·    400+ automated tests</text>')
+    g.append(f'<text x="40" y="134" font-size="12.5" fill="{LO}">9 projects    ·    live on the App Store &amp; Google Play    ·    10,000+ app users    ·    an AI booking assistant, 15 tools</text>')
     write("language-mix.svg", f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" font-family="{FONT}" role="img" aria-label="Language mix and project metrics">
 <defs><clipPath id="c"><rect width="{W}" height="{h}" rx="16"/></clipPath></defs>
 <g clip-path="url(#c)"><rect width="{W}" height="{h}" fill="{BG}"/>{"".join(g)}</g>

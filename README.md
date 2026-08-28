@@ -4,12 +4,14 @@
   secure API design, Postgres Row Level Security, LLM cost & reliability engineering.
   MERN · Next.js · Python / Flask · Kotlin · Java · React Native.
   Co-lead developer (one of two) on EasyQuran — a Quran study app built with a Saudi team,
-  live on the App Store and Google Play. Lahore, Pakistan. Panels are generated SVGs in /assets/w.
+  live on the App Store and Google Play. Aria — an AI booking assistant at Prime Coworking:
+  LLM tool-calling over a production scheduling platform, OTP-gated mutations, audit trail.
+  Lahore, Pakistan. Panels are generated SVGs in /assets/x.
 -->
 
 <div align="center">
 
-<img width="100%" src="./assets/w/hero-banner.svg" alt="Ahmad Hassan — AI Systems Engineer, Full-Stack Developer, Native Android. LLM products end to end: RAG, agents, multi-tenant data isolation." />
+<img width="100%" src="./assets/x/hero-banner.svg" alt="Ahmad Hassan — AI Systems Engineer, Full-Stack Developer, Native Android. LLM products end to end: RAG, agents, multi-tenant data isolation." />
 
 <br/>
 
@@ -30,7 +32,7 @@
 
 <br/>
 
-<img width="100%" src="./assets/w/divider.svg" alt="" />
+<img width="100%" src="./assets/x/divider.svg" alt="" />
 
 ## 🧭 Profile
 
@@ -38,27 +40,33 @@
 
 I build **applied AI systems** that survive contact with real users. Most LLM work stops at *"it calls the model and it runs on my machine."* Mine is designed for the parts that break in production — per-user token budgets so one account can't run up the bill, graceful degradation when the model returns garbage or times out, signed short-lived asset URLs, and a test suite built around the invariants the security model actually rests on.
 
-I own products **end to end**: data model, API, auth, the web client, the Android app, CI and the deploy — no handoffs for something to fall through. Most recently as **co-lead developer on [EasyQuran](https://easyquran.app)**, a Quran study app built with a Saudi team and shipped to the App Store and Google Play, now used by 10,000+ families at 4.9★.
+I own products **end to end**: data model, API, auth, the web client, the Android app, CI and the deploy — no handoffs for something to fall through. Most recently as **co-lead developer on [EasyQuran](https://easyquran.app)**, a Quran study app built with a Saudi team and shipped to the App Store and Google Play, now used by 10,000+ families at 4.9★. At **Prime Coworking** I built **Aria**, a conversational booking assistant layered over the company's scheduling platform — 15 tools over the existing domain services, an emailed OTP on every booking change, and an audit-log entry for each write.
 
 <table>
 <tr><td>⚡&nbsp;<b>Edge</b></td><td>Taking working prototypes to production — revocation-aware sessions, tenant isolation enforced in the database, cost controls on metered AI, and deploys that actually happen</td></tr>
 <tr><td>🌐&nbsp;<b>Web</b></td><td><b>MERN</b> &amp; <b>Next.js</b> — REST APIs, auth &amp; sessions, Postgres Row Level Security, React Server Components, real-time over WebSockets / SSE</td></tr>
 <tr><td>📱&nbsp;<b>Mobile</b></td><td>Native <b>Android</b> in <b>Kotlin</b> &amp; <b>Java</b> — Material 3, offline-first sync, biometric &amp; encrypted storage, CI-built release APKs, published to Google Play</td></tr>
-<tr><td>🤖&nbsp;<b>AI</b></td><td><b>Python / Flask</b> — RAG pipelines, decision engines, background schedulers, structured &amp; streamed LLM output, prompt-cost engineering</td></tr>
+<tr><td>🤖&nbsp;<b>AI</b></td><td><b>Python / Flask</b> &amp; <b>NestJS</b> — RAG pipelines, tool-calling assistants over live production services, decision engines, background schedulers, structured &amp; streamed output, prompt-cost &amp; reliability engineering</td></tr>
 <tr><td>🤝&nbsp;<b>Teams</b></td><td>Co-lead developer (one of two) on a Saudi engineering team, alongside dedicated QA, content and marketing teams</td></tr>
 <tr><td>📍&nbsp;<b>Based in</b></td><td>Lahore, Pakistan — open to remote</td></tr>
 </table>
 
 <br/>
 
-<img width="100%" src="./assets/w/divider.svg" alt="" />
+<img width="100%" src="./assets/x/divider.svg" alt="" />
 
 ## 🗂️ Selected Work
 
-Eight shipped products — one live on the App Store &amp; Google Play, the rest open-source with every number pulled straight from the repo.
+Nine projects — an AI booking layer for a commercial scheduling platform at Prime Coworking, one app live on the App Store &amp; Google Play, and the rest open-source with every number pulled straight from the repo.
 
 <table>
 <tr><th align="left">Project</th><th align="left">What it is</th><th align="left">Signals</th></tr>
+
+<tr>
+<td><b>Aria</b><br/><sub>AI Booking Assistant · at Prime Coworking</sub></td>
+<td>A conversational booking layer built at <b>Prime Coworking</b>, sitting on top of the company's existing scheduling platform. Customers chat in any language — <i>&ldquo;need an appointment tomorrow after 5&rdquo;</i> — and Aria resolves the service and staff, offers <b>real</b> open slots, and books, reschedules or cancels. The rule that holds it together: Aria owns <b>no</b> availability or booking logic — the booking engine stays the single source of truth and Aria is a pure orchestration layer, so the assistant and the traditional booking widget can never drift apart.</td>
+<td><code>NestJS · TypeScript</code> <code>15 tool-calling functions</code> <code>MongoDB conversation memory</code> <code>Gemini 2.5 Flash</code> <code>OTP-gated + audit-logged mutations</code> <code>provider-neutral LLM layer</code><br/><sub>One public endpoint, throttled per IP · every tool wraps a domain service the production widget already calls — zero duplicated booking logic · 40-message bounded history with orphan-turn protection · 4-attempt retry with backoff · React 19 iframe chat widget — focus-trap a11y, abort-on-unmount, server-owned state</sub></td>
+</tr>
 
 <tr>
 <td><a href="https://easyquran.app"><b>EasyQuran</b></a><br/><sub><a href="https://apps.apple.com/pk/app/easy-quran-urdu-and-english/id6759831556">App&nbsp;Store&nbsp;↗</a> · <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran">Google&nbsp;Play&nbsp;↗</a></sub></td>
@@ -112,7 +120,7 @@ Eight shipped products — one live on the App Store &amp; Google Play, the rest
 
 <br/>
 
-<img width="100%" src="./assets/w/divider.svg" alt="" />
+<img width="100%" src="./assets/x/divider.svg" alt="" />
 
 ## 🔬 Engineering Notes
 
@@ -124,10 +132,12 @@ A few decisions from the work above that I'd defend in a review:
 - **The model is the last resort, not the first.** The Copper Larder answers caps, complaints and common questions from scripted intercepts and a cache; Gemini only ever sees what none of those could handle.
 - **Offline is a feature, not a fallback.** MindScribe hands uploads to WorkManager so they finish after a reboot; EasyQuran works fully offline after the first download.
 - **Revocation is instant.** NoteMind re-verifies the session against the database on every request — a revoked user is locked out now, not in fifteen minutes.
+- **A public endpoint still needs teeth.** Aria's booking API is unauthenticated by design, so every booking change is gated behind an emailed OTP (with a name-and-phone-match fallback), rate-limited per IP, locked after repeated bad attempts and written to an audit log — and the prompt's integrity block means a customer can't talk their way past any of it.
+- **The model orchestrates; it never owns the truth.** Each of Aria's 15 tools wraps the exact domain service the production booking widget already calls, so there is no second copy of the availability logic for the AI to disagree with.
 
 <br/>
 
-<img width="100%" src="./assets/w/divider.svg" alt="" />
+<img width="100%" src="./assets/x/divider.svg" alt="" />
 
 ## 🧰 Tech Stack
 
@@ -136,7 +146,7 @@ What I reach for, and what I've shipped with.
 **🤖 AI &amp; Data**
 
 ![AI and data](https://skillicons.dev/icons?i=python,flask,sklearn,anaconda)
-`Google Gemini` `OpenAI` `LangChain` `RAG pipelines` `Vector search & embeddings` `Structured & streamed output` `Prompt-cost engineering` `Pandas`
+`Google Gemini` `OpenAI` `LangChain` `RAG pipelines` `Function / tool calling` `Vector search & embeddings` `Structured & streamed output` `Prompt-cost & reliability engineering` `Pandas`
 
 **🌐 Frontend**
 
@@ -145,8 +155,8 @@ What I reach for, and what I've shipped with.
 
 **🔧 Backend**
 
-![Backend](https://skillicons.dev/icons?i=nodejs,express,graphql,vitest)
-`Node.js` `Express 5` `Flask` `REST APIs` `Server-Sent Events` `Socket.IO` `Zod` `JWT` `APScheduler`
+![Backend](https://skillicons.dev/icons?i=nodejs,nestjs,express,graphql,vitest)
+`Node.js` `NestJS` `Express 5` `Flask` `REST APIs` `LLM tool-calling loops` `Server-Sent Events` `Socket.IO` `Zod` `JWT` `APScheduler`
 
 **🗄️ Databases**
 
@@ -165,17 +175,17 @@ What I reach for, and what I've shipped with.
 
 <br/>
 
-<img width="100%" src="./assets/w/divider.svg" alt="" />
+<img width="100%" src="./assets/x/divider.svg" alt="" />
 
 ## 📊 By the Numbers
 
 <div align="center">
-<img width="100%" src="./assets/w/language-mix.svg" alt="Language mix — TypeScript 31%, JavaScript 23%, Kotlin 15%, Java 15%, Python 12%, SQL/PLpgSQL 4%. 8 shipped products, live on the App Store and Google Play, 10,000+ app users, 400+ automated tests." />
+<img width="100%" src="./assets/x/language-mix.svg" alt="Language mix — TypeScript 34%, JavaScript 22%, Kotlin 14%, Java 14%, Python 12%, SQL/PLpgSQL 4%. 9 projects, live on the App Store and Google Play, 10,000+ app users, an AI booking assistant with 15 tools." />
 </div>
 
 <br/>
 
-<img width="100%" src="./assets/w/divider.svg" alt="" />
+<img width="100%" src="./assets/x/divider.svg" alt="" />
 
 ## ⚙️ How I Build
 
@@ -189,11 +199,11 @@ What I reach for, and what I've shipped with.
 
 <br/>
 
-<img width="100%" src="./assets/w/divider.svg" alt="" />
+<img width="100%" src="./assets/x/divider.svg" alt="" />
 
 <div align="center">
 
-<img width="100%" src="./assets/w/footer-banner.svg" alt="Let's build something — open to AI engineering and full-stack roles, remote or Lahore." />
+<img width="100%" src="./assets/x/footer-banner.svg" alt="Let's build something — open to AI engineering and full-stack roles, remote or Lahore." />
 
 <br/>
 
