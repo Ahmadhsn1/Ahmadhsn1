@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="LET’S BUILD SOMETHING - OPEN TO AI ENGINEERING &amp; FULL-STACK ROLES — REMOTE OR LAHORE">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0F1C"/><stop offset="0.5" stop-color="#0B1220"/><stop offset="1" stop-color="#0A1428"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.42" r="0.55"><stop offset="0" stop-color="#2563EB" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2563EB" stop-opacity="0.12"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></radialGradient>
+<linearGradient id="wm" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7DD3FC"/><stop offset="0.5" stop-color="#38BDF8"/><stop offset="1" stop-color="#818CF8"/></linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2563EB" stop-opacity="0"/><stop offset="0.45" stop-color="#38BDF8"><animate attributeName="offset" values="0.30;0.62;0.30" dur="7s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient>
+<filter id="soft" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+<clipPath id="clip"><rect width="1200" height="150" rx="16"/></clipPath>
+<clipPath id="wmclip"><text x="600.0" y="61" text-anchor="middle" font-size="52" font-weight="800" letter-spacing="7">LET’S BUILD SOMETHING</text></clipPath>
+<style>
+@keyframes glow{0%,100%{opacity:.5}50%{opacity:.85}}
+@keyframes sweep{0%{transform:translateX(-460px)}62%,100%{transform:translateX(1420px)}}
+@keyframes blink{0%,48%{opacity:1}52%,100%{opacity:0}}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(6px,-4px)}}
+.glow{animation:glow 7s ease-in-out infinite}
+.sheen{animation:sweep 6s ease-in-out infinite}
+.caret{animation:blink 1.05s step-end infinite}
+.drift{animation:drift 16s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.glow,.sheen,.caret,.drift{animation:none}.caret{opacity:1}}
+</style>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="150" fill="url(#bg)"/>
+<ellipse class="glow" cx="600.0" cy="66.0" rx="520" ry="105.0" fill="url(#glow)"/>
+<g class="drift"><line x1="120" y1="60" x2="250" y2="120" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="2 6"/><line x1="250" y1="120" x2="170" y2="200" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="2 6"/><line x1="1010" y1="70" x2="1090" y2="150" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="2 6"/><line x1="1010" y1="70" x2="900" y2="40" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="2 6"/><circle cx="120" cy="60" r="2.5" fill="#38BDF8" fill-opacity="0.5"/><circle cx="250" cy="120" r="2" fill="#38BDF8" fill-opacity="0.35"/><circle cx="170" cy="200" r="2" fill="#38BDF8" fill-opacity="0.3"/><circle cx="1010" cy="70" r="2.5" fill="#38BDF8" fill-opacity="0.5"/><circle cx="1090" cy="150" r="2" fill="#38BDF8" fill-opacity="0.35"/><circle cx="900" cy="40" r="2" fill="#38BDF8" fill-opacity="0.4"/></g>
+<text x="600.0" y="61" text-anchor="middle" font-size="52" font-weight="800" letter-spacing="7" fill="url(#wm)" filter="url(#soft)" opacity="0.5">LET’S BUILD SOMETHING</text>
+<text x="600.0" y="61" text-anchor="middle" font-size="52" font-weight="800" letter-spacing="7" fill="url(#wm)">LET’S BUILD SOMETHING</text>
+<g clip-path="url(#wmclip)"><rect class="sheen" x="-220" y="0" width="180" height="150" fill="url(#sheen)"/></g>
+
+<text x="600.0" y="95" text-anchor="middle" font-size="13.5" font-weight="600" letter-spacing="4" fill="#9DB2D2">OPEN TO AI ENGINEERING &amp; FULL-STACK ROLES — REMOTE OR LAHORE</text>
+
+<rect x="0" y="147" width="1200" height="3" fill="url(#bar)"/>
+</g>
+</svg>

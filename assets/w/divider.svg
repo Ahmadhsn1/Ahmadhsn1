@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 34" width="1200" height="34" role="img" aria-label="">
+<defs>
+<linearGradient id="l" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38BDF8" stop-opacity="0"/><stop offset="0.5" stop-color="#38BDF8" stop-opacity="0.5"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></linearGradient>
+<linearGradient id="hi" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38BDF8" stop-opacity="0"/><stop offset="0.5" stop-color="#CFEEFF" stop-opacity="0.9"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></linearGradient>
+<clipPath id="band"><rect x="0" y="15.5" width="1200" height="3"/></clipPath>
+<style>
+@keyframes dsweep{0%{transform:translateX(-260px)}58%,100%{transform:translateX(1320px)}}
+@keyframes dpulse{0%,100%{opacity:.65;transform:scale(1)}50%{opacity:1;transform:scale(1.14)}}
+.dsweep{animation:dsweep 5.5s ease-in-out infinite}
+.dpulse{transform-box:fill-box;transform-origin:center;animation:dpulse 4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.dsweep,.dpulse{animation:none}}
+</style>
+</defs>
+<rect x="0" y="16.5" width="1200" height="1" fill="url(#l)"/>
+<g clip-path="url(#band)"><rect class="dsweep" x="-220" y="15.5" width="200" height="3" fill="url(#hi)"/></g>
+<rect class="dpulse" x="596.0" y="13.0" width="8" height="8" fill="#0B1220" stroke="#38BDF8" stroke-opacity="0.8" stroke-width="1.2" transform="rotate(45 600.0 17.0)"/>
+</svg>
