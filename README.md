@@ -45,7 +45,7 @@ I own products **end to end**: data model, API, auth, the web client, the Androi
 
 <table>
 <tr><td>⚡&nbsp;<b>Edge</b></td><td>Taking working prototypes to production — revocation-aware sessions, tenant isolation enforced in the database, cost controls on metered AI, and deploys that actually happen</td></tr>
-<tr><td>🌐&nbsp;<b>Web</b></td><td><b>MERN</b> &amp; <b>Next.js</b> — REST APIs, auth &amp; sessions, Postgres Row Level Security, React Server Components, real-time over WebSockets / SSE</td></tr>
+<tr><td>🌐&nbsp;<b>Web</b></td><td><b>MERN</b> &amp; <td><b>Nest.js</b> &amp; <b>Next.js</b> — REST APIs, auth &amp; sessions, Postgres Row Level Security, React Server Components, real-time over WebSockets / SSE</td></tr>
 <tr><td>📱&nbsp;<b>Mobile</b></td><td>Native <b>Android</b> in <b>Kotlin</b> &amp; <b>Java</b> — Material 3, offline-first sync, biometric &amp; encrypted storage, CI-built release APKs, published to Google Play</td></tr>
 <tr><td>🤖&nbsp;<b>AI</b></td><td><b>Python / Flask</b> &amp; <b>NestJS</b> — RAG pipelines, tool-calling assistants over live production services, decision engines, background schedulers, structured &amp; streamed output, prompt-cost &amp; reliability engineering</td></tr>
 <tr><td>🤝&nbsp;<b>Teams</b></td><td>Co-lead developer (one of two) on a Saudi engineering team, alongside dedicated QA, content and marketing teams</td></tr>
