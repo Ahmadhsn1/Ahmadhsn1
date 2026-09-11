@@ -64,15 +64,15 @@ Eleven projects — an AI assistant layer for Prime Coworking's e-Booking SaaS p
 <tr><th align="left">Project</th><th align="left">What it is</th><th align="left">Signals</th></tr>
 
 <tr>
-<td><b>Aria</b><br/><sub>AI Booking Assistant · at Prime Coworking</sub></td>
-<td>A conversational booking layer built at <b>Prime Coworking</b> on top of the company's <b>e-Booking system</b> — its multi-tenant SaaS booking &amp; scheduling product. Customers chat in any language — <i>&ldquo;need an appointment tomorrow after 5&rdquo;</i> — and Aria resolves the service and staff, offers <b>real</b> open slots, and books, reschedules or cancels. The rule that holds it together: Aria owns <b>no</b> availability or booking logic — the booking engine stays the single source of truth and Aria is a pure orchestration layer, so the assistant and the product's own booking widget can never drift apart.</td>
-<td><code>NestJS · TypeScript</code> <code>15 tool-calling functions</code> <code>MongoDB conversation memory</code> <code>Gemini 2.5 Flash</code> <code>OTP-gated + audit-logged mutations</code> <code>provider-neutral LLM layer</code><br/><sub>One public endpoint, throttled per IP · every tool wraps a domain service the e-Booking product's own widget already calls — zero duplicated booking logic · 40-message bounded history with orphan-turn protection · 4-attempt retry with backoff · React 19 iframe chat widget — focus-trap a11y, abort-on-unmount, server-owned state</sub></td>
-</tr>
-
-<tr>
 <td><a href="https://easyquran.app"><b>EasyQuran</b></a><br/><sub><a href="https://apps.apple.com/pk/app/easy-quran-urdu-and-english/id6759831556">App&nbsp;Store&nbsp;↗</a> · <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran">Google&nbsp;Play&nbsp;↗</a></sub></td>
 <td><b>Co-lead developer</b> (one of two), frontend + backend. A native Quran study app for Muslim families — the full text with 11+ translations, verse-by-verse recitation with repeat mode, tafseer from Ibn Kathir &amp; Maududi, topic-based browsing, and daily reading goals with streak tracking. Works fully offline after first download; scholar-certified; completely ad-free.</td>
 <td><code>Kotlin</code> <code>Native Android</code> <code>iOS · Android · Web</code> <code>10,000+ families</code> <code>4.9★ Google Play</code> <code>11+ translations</code> <code>offline-first</code><br/><sub>Kotlin client + REST backend · offline sync engine · audio streaming · App Store + Play Store release pipeline · built with a Saudi team (QA · content · marketing)</sub></td>
+</tr>
+
+<tr>
+<td><b>Aria</b><br/><sub>AI Booking Assistant · at Prime Coworking</sub></td>
+<td>A conversational booking layer built at <b>Prime Coworking</b> on top of the company's <b>e-Booking system</b> — its multi-tenant SaaS booking &amp; scheduling product. Customers chat in any language — <i>&ldquo;need an appointment tomorrow after 5&rdquo;</i> — and Aria resolves the service and staff, offers <b>real</b> open slots, and books, reschedules or cancels. The rule that holds it together: Aria owns <b>no</b> availability or booking logic — the booking engine stays the single source of truth and Aria is a pure orchestration layer, so the assistant and the product's own booking widget can never drift apart.</td>
+<td><code>NestJS · TypeScript</code> <code>15 tool-calling functions</code> <code>MongoDB conversation memory</code> <code>Gemini 2.5 Flash</code> <code>OTP-gated + audit-logged mutations</code> <code>provider-neutral LLM layer</code><br/><sub>One public endpoint, throttled per IP · every tool wraps a domain service the e-Booking product's own widget already calls — zero duplicated booking logic · 40-message bounded history with orphan-turn protection · 4-attempt retry with backoff · React 19 iframe chat widget — focus-trap a11y, abort-on-unmount, server-owned state</sub></td>
 </tr>
 
 <tr>
