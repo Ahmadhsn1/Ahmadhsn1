@@ -58,7 +58,7 @@ I own products **end to end**: data model, API, auth, the web client, the Androi
 
 ## 🗂️ Selected Work
 
-Nine projects — an AI assistant layer for Prime Coworking's e-Booking SaaS product, one app live on the App Store &amp; Google Play, and the rest open-source with every number pulled straight from the repo.
+Eleven projects — an AI assistant layer for Prime Coworking's e-Booking SaaS product, one app live on the App Store &amp; Google Play, and the rest open-source with every number pulled straight from the repo.
 
 <table>
 <tr><th align="left">Project</th><th align="left">What it is</th><th align="left">Signals</th></tr>
@@ -73,6 +73,18 @@ Nine projects — an AI assistant layer for Prime Coworking's e-Booking SaaS pro
 <td><a href="https://easyquran.app"><b>EasyQuran</b></a><br/><sub><a href="https://apps.apple.com/pk/app/easy-quran-urdu-and-english/id6759831556">App&nbsp;Store&nbsp;↗</a> · <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran">Google&nbsp;Play&nbsp;↗</a></sub></td>
 <td><b>Co-lead developer</b> (one of two), frontend + backend. A native Quran study app for Muslim families — the full text with 11+ translations, verse-by-verse recitation with repeat mode, tafseer from Ibn Kathir &amp; Maududi, topic-based browsing, and daily reading goals with streak tracking. Works fully offline after first download; scholar-certified; completely ad-free.</td>
 <td><code>Kotlin</code> <code>Native Android</code> <code>iOS · Android · Web</code> <code>10,000+ families</code> <code>4.9★ Google Play</code> <code>11+ translations</code> <code>offline-first</code><br/><sub>Kotlin client + REST backend · offline sync engine · audio streaming · App Store + Play Store release pipeline · built with a Saudi team (QA · content · marketing)</sub></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/Ahmadhsn1/Rag-saas-RetrivoVault"><b>Retrivo Vault</b></a><br/><sub>AI Research Assistant · RAG SaaS</sub></td>
+<td>The research assistant that only knows what you've read — a production-grade, individual-focused RAG SaaS. Upload contracts, papers and notes; every answer carries an inline citation back to the exact passage it came from, and a missing fact is shown as <i>Unknown</i>, never invented. Per-user isolation is enforced <b>inside the vector index itself</b>, not bolted on as a query filter that could someday be forgotten.</td>
+<td><code>142 tests</code> <code>MongoDB Atlas Vector Search</code> <code>Gemini embeddings + generation</code> <code>Stripe billing</code> <code>SSE streaming</code> <code>admin console</code><br/><sub><code>userId</code> is a pre-filter inside <code>$vectorSearch</code>, not a post-query <code>$match</code> · refresh-token reuse detection with a 15s replay-grace window · SSRF-blocked personal webhooks (metadata &amp; private ranges refused, redirects re-checked) · three-tier chunking cascade — paragraph → sentence → hard split · zero-config demo mode spins up an in-memory Mongo</sub></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/Ahmadhsn1/leadforge-ai"><b>LeadForge AI</b></a><br/><sub>AI Sales-Intelligence Platform</sub></td>
+<td>Finds local businesses, explains <b>why</b> each is worth contacting — with citable evidence behind every claim — and drafts the message you'd actually send. A claim the model can't trace back to a stored observation is dropped before it ever reaches you; scores across six dimensions are computed in code, not guessed by a model, so they can't drift between identical runs. Nothing is sent without your approval.</td>
+<td><code>198 automated checks</code> <code>NestJS 11 · Next.js 15</code> <code>BullMQ + Redis queue</code> <code>Prisma · PostgreSQL</code> <code>deterministic scoring</code> <code>runs end-to-end for $0</code><br/><sub>Background worker boots the API's own Nest module graph — one code path for scoring and outreach, never two that can drift · every outbound message passes a deterministic rule engine <i>and</i> an adversarial model check · tenant scope is taken from the session only, never a request body · jobs are idempotent on <code>(queue, idempotencyKey)</code></sub></td>
 </tr>
 
 <tr>
@@ -135,6 +147,8 @@ A few decisions from the work above that I'd defend in a review:
 - **Revocation is instant.** NoteMind re-verifies the session against the database on every request — a revoked user is locked out now, not in fifteen minutes.
 - **A public endpoint still needs teeth.** Aria's booking API is unauthenticated by design, so every booking change is gated behind an emailed OTP (with a name-and-phone-match fallback), rate-limited per IP, locked after repeated bad attempts and written to an audit log — and the prompt's integrity block means a customer can't talk their way past any of it.
 - **The model orchestrates; it never owns the truth.** Each of Aria's 15 tools wraps the exact domain service the e-Booking product's own booking widget already calls, so there is no second copy of the availability logic for the AI to disagree with.
+- **Isolation belongs in the index, not the query.** Retrivo Vault's per-user filter is part of the Atlas Vector Search index definition itself — a `userId` check someone forgets to add to a new retrieval path simply can't leak a chunk that was never a candidate in the first place.
+- **A claim without a citation doesn't ship.** LeadForge AI drops any model-made claim that can't be traced to a stored evidence record before a user ever sees it, and computes its six lead-scoring dimensions in code — the model is only ever asked to explain a number, never produce one.
 
 <br/>
 
@@ -157,12 +171,12 @@ What I reach for, and what I've shipped with.
 **🔧 Backend**
 
 ![Backend](https://skillicons.dev/icons?i=nodejs,nestjs,express,graphql,vitest)
-`Node.js` `NestJS` `Express 5` `Flask` `REST APIs` `LLM tool-calling loops` `Server-Sent Events` `Socket.IO` `Zod` `JWT` `APScheduler`
+`Node.js` `NestJS` `Express 5` `Flask` `REST APIs` `LLM tool-calling loops` `Server-Sent Events` `Socket.IO` `BullMQ` `Zod` `JWT` `APScheduler`
 
 **🗄️ Databases**
 
-![Databases](https://skillicons.dev/icons?i=postgres,supabase,mongodb,firebase,mysql)
-`PostgreSQL` `Supabase` `Row Level Security` `MongoDB / Mongoose` `Cloud Firestore` `MySQL` `Redis`
+![Databases](https://skillicons.dev/icons?i=postgres,supabase,mongodb,firebase,mysql,redis)
+`PostgreSQL` `Prisma` `Supabase` `Row Level Security` `MongoDB / Mongoose` `Atlas Vector Search` `Cloud Firestore` `MySQL` `Redis`
 
 **📱 Mobile**
 
@@ -172,7 +186,7 @@ What I reach for, and what I've shipped with.
 **⚙️ DevOps &amp; Tooling**
 
 ![DevOps and tooling](https://skillicons.dev/icons?i=git,github,githubactions,docker,vercel,cloudflare)
-`Git` `GitHub Actions` `Docker` `Vercel` `Cloudflare R2` `Vitest` `Supertest` `in-memory MongoDB (tests)`
+`Git` `GitHub Actions` `Docker` `Vercel` `Cloudflare R2` `Stripe` `Vitest` `Supertest` `in-memory MongoDB (tests)`
 
 <br/>
 
