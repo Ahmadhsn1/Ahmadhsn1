@@ -16,6 +16,7 @@
 
 <br/>
 
+<a href="https://ahmadhsn1.github.io/"><img src="https://img.shields.io/badge/Portfolio-ahmadhsn1.github.io-FF6A3D?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio of Ahmad Hassan, software engineer in Lahore" /></a>
 <a href="https://www.linkedin.com/in/ahmad-hassan0099/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:ahmad.hsn0099@gmail.com"><img src="https://img.shields.io/badge/Email-2563EB?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://apps.apple.com/pk/app/easy-quran-urdu-and-english/id6759831556"><img src="https://img.shields.io/badge/App%20Store-0B1220?style=for-the-badge&logo=apple&logoColor=white" alt="EasyQuran on the App Store" /></a>
@@ -222,6 +223,7 @@ What I reach for, and what I've shipped with.
 
 <br/>
 
+<a href="https://ahmadhsn1.github.io/"><img src="https://img.shields.io/badge/Visit%20my%20portfolio-FF6A3D?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" /></a>
 <a href="https://www.linkedin.com/in/ahmad-hassan0099/"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:ahmad.hsn0099@gmail.com"><img src="https://img.shields.io/badge/ahmad.hsn0099@gmail.com-2563EB?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
