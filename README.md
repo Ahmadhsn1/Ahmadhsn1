@@ -39,7 +39,7 @@
 
 ## 🧭 Profile
 
-**Ahmad Hassan** is a full-stack AI engineer and developer based in Lahore, Pakistan. Find him elsewhere: [Portfolio](https://ahmadhsn1.github.io/) · [LinkedIn](https://www.linkedin.com/in/ahmadhsn1/) · [Dev.to](https://dev.to/ahmad_hassan_6433415b38c6) · [Medium](https://medium.com/@ahmad.hsn0099) · [Hashnode](https://hashnode.com/@ahmadhsn1) · [Hugging Face](https://huggingface.co/Ahmadhsn1) · [Stack Overflow](https://stackoverflow.com/users/33209459/ahmad-hassan)
+**Ahmad Hassan** is a full-stack AI engineer and developer based in Lahore, Pakistan. Find him elsewhere: [Portfolio](https://ahmadhsn1.github.io/) · [LinkedIn](https://www.linkedin.com/in/ahmadhsn1/) · [Dev.to](https://dev.to/ahmadhsn1) · [Medium](https://medium.com/@ahmad.hsn0099) · [Hashnode](https://hashnode.com/@ahmadhsn1) · [Hugging Face](https://huggingface.co/Ahmadhsn1) · [Stack Overflow](https://stackoverflow.com/users/33209459/ahmad-hassan)
 
 > **"The gap between a notebook that calls a model and a product people pay for — I engineer that gap."**
 
