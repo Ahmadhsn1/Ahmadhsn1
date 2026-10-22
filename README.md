@@ -1,5 +1,5 @@
 <!--
-  Ahmad Hassan (@Ahmadhsn1) — AI Systems Engineer · Full-Stack Developer · Native Android.
+  Ahmad Hassan (@Ahmadhsn1) — Full Stack Developer building full stack AI systems.
   LLM products end to end: RAG pipelines, agents, agentic workflows, multi-tenant SaaS,
   secure API design, Postgres Row Level Security, LLM cost & reliability engineering.
   MERN · Next.js · Python / Flask · Kotlin · Java · React Native.
@@ -12,7 +12,7 @@
 
 <div align="center">
 
-<img width="100%" src="./assets/x/hero-banner.svg" alt="Ahmad Hassan — AI Systems Engineer, Full-Stack Developer, Native Android. LLM products end to end: RAG, agents, multi-tenant data isolation." />
+<img width="100%" src="./assets/x/hero-banner.svg" alt="Ahmad Hassan — Full Stack Developer building full stack AI systems. LLM products end to end: RAG, agents, multi-tenant data isolation." />
 
 <br/>
 
@@ -39,18 +39,17 @@
 
 ## 🧭 Profile
 
-**Ahmad Hassan** is a full-stack AI engineer and developer based in Lahore, Pakistan. Find him elsewhere: [Portfolio](https://ahmadhsn1.github.io/) · [LinkedIn](https://www.linkedin.com/in/ahmadhsn1/) · [Dev.to](https://dev.to/ahmadhsn1) · [Medium](https://medium.com/@ahmad.hsn0099) · [Hashnode](https://hashnode.com/@ahmadhsn1) · [Hugging Face](https://huggingface.co/Ahmadhsn1) · [Stack Overflow](https://stackoverflow.com/users/33209459/ahmad-hassan)
+**Ahmad Hassan** is a full stack AI engineer and developer based in Lahore, Pakistan. Find him elsewhere: [Portfolio](https://ahmadhsn1.github.io/) · [LinkedIn](https://www.linkedin.com/in/ahmadhsn1/) · [Dev.to](https://dev.to/ahmadhsn1) · [Medium](https://medium.com/@ahmad.hsn0099) · [Hashnode](https://hashnode.com/@ahmadhsn1) · [Hugging Face](https://huggingface.co/Ahmadhsn1) · [Stack Overflow](https://stackoverflow.com/users/33209459/ahmad-hassan)
 
 > **"The gap between a notebook that calls a model and a product people pay for — I engineer that gap."**
 
 I build **applied AI systems** that survive contact with real users. Most LLM work stops at *"it calls the model and it runs on my machine."* Mine is designed for the parts that break in production — per-user token budgets so one account can't run up the bill, graceful degradation when the model returns garbage or times out, signed short-lived asset URLs, and a test suite built around the invariants the security model actually rests on.
 
-I own products **end to end**: data model, API, auth, the web client, the Android app, CI and the deploy — no handoffs for something to fall through. Most recently as **co-lead developer on [EasyQuran](https://easyquran.app)**, a Quran study app built with a Saudi team and shipped to the App Store and Google Play, now used by 10,000+ families at 4.9★. At **Prime Coworking** I built **Aria**, a conversational booking assistant layered over the company's **e-Booking system** — its SaaS booking &amp; scheduling product — with 15 tools over the existing domain services, an emailed OTP on every booking change, and an audit-log entry for each write.
+I own products **end to end**: data model, API, auth, the web client, CI and the deploy — no handoffs for something to fall through. Most recently as **co-lead developer on [EasyQuran](https://easyquran.app)**, a Quran study app built with a Saudi team and shipped to the App Store and Google Play, now used by 10,000+ families at 4.9★. At **Prime Coworking** I built **Aria**, a conversational booking assistant layered over the company's **e-Booking system** — its SaaS booking &amp; scheduling product — with 15 tools over the existing domain services, an emailed OTP on every booking change, and an audit-log entry for each write.
 
 <table>
 <tr><td>⚡&nbsp;<b>Edge</b></td><td>Taking working prototypes to production — revocation-aware sessions, tenant isolation enforced in the database, cost controls on metered AI, and deploys that actually happen</td></tr>
 <tr><td>🌐&nbsp;<b>Web</b></td><td><b>MERN</b> &amp; <b>Nest.js</b> &amp; <b>Next.js</b> — REST APIs, auth &amp; sessions, Postgres Row Level Security, React Server Components, real-time over WebSockets / SSE</td></tr>
-<tr><td>📱&nbsp;<b>Mobile</b></td><td>Native <b>Android</b> in <b>Kotlin</b> &amp; <b>Java</b> — Material 3, offline-first sync, biometric &amp; encrypted storage, CI-built release APKs, published to Google Play</td></tr>
 <tr><td>🤖&nbsp;<b>AI</b></td><td><b>Python / Flask</b> &amp; <b>NestJS</b> — RAG pipelines, tool-calling assistants over live production services, decision engines, background schedulers, structured &amp; streamed output, prompt-cost &amp; reliability engineering</td></tr>
 <tr><td>🤝&nbsp;<b>Teams</b></td><td>Co-lead developer (one of two) on a Saudi engineering team, alongside dedicated QA, content and marketing teams</td></tr>
 <tr><td>📍&nbsp;<b>Based in</b></td><td>Lahore, Pakistan — open to remote</td></tr>
@@ -222,7 +221,7 @@ What I reach for, and what I've shipped with.
 
 <div align="center">
 
-<img width="100%" src="./assets/x/footer-banner.svg" alt="Let's build something — open to AI engineering and full-stack roles, remote or Lahore." />
+<img width="100%" src="./assets/x/footer-banner.svg" alt="Let's build something — open to AI engineering and full stack roles, remote or Lahore." />
 
 <br/>
 
