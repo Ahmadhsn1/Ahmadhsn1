@@ -39,6 +39,8 @@
 
 ## 🧭 Profile
 
+**Ahmad Hassan** is a full-stack AI engineer and developer based in Lahore, Pakistan. Find him elsewhere: [Portfolio](https://ahmadhsn1.github.io/) · [LinkedIn](https://www.linkedin.com/in/ahmadhsn1/) · [Dev.to](https://dev.to/ahmad_hassan_6433415b38c6) · [Medium](https://medium.com/@ahmad.hsn0099) · [Hashnode](https://hashnode.com/@ahmadhsn1) · [Hugging Face](https://huggingface.co/Ahmadhsn1) · [Stack Overflow](https://stackoverflow.com/users/33209459/ahmad-hassan)
+
 > **"The gap between a notebook that calls a model and a product people pay for — I engineer that gap."**
 
 I build **applied AI systems** that survive contact with real users. Most LLM work stops at *"it calls the model and it runs on my machine."* Mine is designed for the parts that break in production — per-user token budgets so one account can't run up the bill, graceful degradation when the model returns garbage or times out, signed short-lived asset URLs, and a test suite built around the invariants the security model actually rests on.
