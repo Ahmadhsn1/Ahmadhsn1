@@ -37,6 +37,24 @@
 
 <img width="100%" src="./assets/x/divider.svg" alt="" />
 
+## Work with me
+
+I take freelance projects for businesses anywhere. Fixed prices to start, plain scope, no long contracts.
+
+| Service | From | Time |
+|---|---|---|
+| AI chatbot for your website, two week pilot | $300 | 2 weeks |
+| Website fix sprint | $120 | 1 week |
+| AI booking assistant | $800 | 3 weeks |
+| Business website, built end to end | $350 | 1 to 3 weeks |
+| Add AI to your existing software | $400 | scoped per project |
+| Search and answers over your own documents (RAG) | $800 | scoped per project |
+| Custom full stack software | $1,500 | scoped per project |
+| Hourly full stack developer | $20 per hour | flexible |
+
+Start with an email to ahmad.hsn0099@gmail.com or order a fixed package on [Contra](https://contra.com/ahmadhsn1). Examples of my work are in the projects below and at [ahmadhsn1.github.io](https://ahmadhsn1.github.io/).
+
+
 ## 🧭 Profile
 
 **Ahmad Hassan** is a full stack AI engineer and developer based in Lahore, Pakistan. Find him elsewhere: [Portfolio](https://ahmadhsn1.github.io/) · [LinkedIn](https://www.linkedin.com/in/ahmadhsn1/) · [Dev.to](https://dev.to/ahmadhsn1) · [Medium](https://medium.com/@ahmad.hsn0099) · [Hashnode](https://hashnode.com/@ahmadhsn1) · [Hugging Face](https://huggingface.co/Ahmadhsn1) · [Stack Overflow](https://stackoverflow.com/users/33209459/ahmad-hassan)
