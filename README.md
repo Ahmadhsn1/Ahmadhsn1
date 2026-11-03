@@ -37,24 +37,6 @@
 
 <img width="100%" src="./assets/x/divider.svg" alt="" />
 
-## Work with me
-
-I take freelance projects for businesses anywhere. Fixed prices to start, plain scope, no long contracts.
-
-| Service | From | Time |
-|---|---|---|
-| AI chatbot for your website, two week pilot | $299 | 2 weeks |
-| Website fix sprint | $119 | 1 week |
-| AI booking assistant | $799 | 3 weeks |
-| Premium animated website, built end to end | $499 | 2 weeks |
-| Scrollytelling website | $599 | 2 weeks |
-| Add AI to your existing software | $400 | scoped per project |
-| Search and answers over your own documents (RAG) | $800 | scoped per project |
-| Custom software and web apps | $799 | scoped per project |
-| Hourly full stack developer | $20 per hour | flexible |
-
-Start with an email to ahmad.hsn0099@gmail.com or order a fixed package on [Contra](https://contra.com/ahmadhsn1). Examples of my work are in the projects below and at [ahmadhsn1.github.io](https://ahmadhsn1.github.io/).
-
 
 ## 🧭 Profile
 
