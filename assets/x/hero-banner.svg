@@ -28,7 +28,7 @@
 <text x="600.0" y="116" text-anchor="middle" font-size="66" font-weight="800" letter-spacing="9" fill="url(#wm)">AHMAD HASSAN</text>
 <g clip-path="url(#wmclip)"><rect class="sheen" x="-220" y="0" width="180" height="260" fill="url(#sheen)"/></g>
 <rect class="caret" x="909" y="68" width="5" height="51" rx="1" fill="#38BDF8"/>
-<text x="600.0" y="150" text-anchor="middle" font-size="13.5" font-weight="600" letter-spacing="4" fill="#9DB2D2">AI SYSTEMS ENGINEER</text>
+<text x="600.0" y="150" text-anchor="middle" font-size="13.5" font-weight="600" letter-spacing="4" fill="#9DB2D2">FULL-STACK AI ENGINEER</text>
 <text x="600.0" y="178" text-anchor="middle" font-family="'SFMono-Regular', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" letter-spacing="1" fill="#5C6F91">LLM products, end to end  ·  RAG  ·  agents  ·  multi-tenant data isolation</text>
 <rect x="0" y="257" width="1200" height="3" fill="url(#bar)"/>
 </g>
